@@ -1317,3 +1317,20 @@ strong {
 	  font-size: 14px;
 	}
   }
+/* ---------- DARK-MODE PATCH: make accordion / timeline text visible ---------- */
+.dark-mode .accordion,
+.dark-mode .accordion .link,
+.dark-mode .accordion .submenu a,
+.dark-mode .timeline-label,
+.dark-mode .timeline-label h2,
+.dark-mode .timeline-label p,
+.dark-mode .timeline-sublabel,
+.dark-mode .timeline-text {
+  color: #ffffff !important;          /* pure white text */
+}
+
+/* optional: lighter divider under section headers so it isn’t pitch-black */
+.dark-mode .accordion .link {
+  border-bottom: 1px solid #555;      /* subtle grey line */
+}
+/* --------------------------------------------------------------------------- */
